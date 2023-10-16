@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class PersonMain {
     public static void main(String[] args) {
-        Person[] person = new Person[5]; //Oder als Arraylist - ArrayList<Person> = new ArrayList<>();
+        Person[] person = new Person[5]; // Oder als Arraylist - ArrayList<Person> = new ArrayList<>();
 
         person[0] = new Person("Test1", 26);
         person[1] = new Person("Test2", 67);
@@ -36,7 +36,7 @@ public class PersonMain {
 
     public static void writePersonListToFile(String filename, Person[] person) {
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filename)); // Oder ohne Buffer (nicht effizient) mit: FileWriter writer = new FileWriter(filename);
 
             for (Person people : person) {
                 writer.write("Name: " + people.getName() + ", Age: " + people.getAge());
