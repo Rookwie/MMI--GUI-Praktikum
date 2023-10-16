@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class PersonMain {
     public static void main(String[] args) {
-        Person[] person = new Person[5]; // Oder als Arraylist - ArrayList<Person> = new ArrayList<>();
+        Person[] person = new Person[5]; // Oder als Arraylist (falls Array länge nicht bekannt):  ArrayList<Person> = new ArrayList<>();
 
         person[0] = new Person("Test1", 26);
         person[1] = new Person("Test2", 67);
