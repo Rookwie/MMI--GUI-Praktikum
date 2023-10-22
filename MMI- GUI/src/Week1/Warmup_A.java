@@ -24,8 +24,7 @@ public class Warmup_A {
                     digitCount++;
                 } else if (Character.isWhitespace(index)) {
                     spaceCount++;
-                } else if (index == 'ä' || index == 'ö' || index == 'ü' || index == 'a' || index == 'e' ||
-                        index == 'i' || index == 'o' || index == 'u' || index == 'y') {
+                } else if (index == 'a' || index == 'e' || index == 'i' || index == 'o' || index == 'u') {
                     vowelCount++;
                 } else if (Character.isLetter(index)) {
                     consonantCount++;

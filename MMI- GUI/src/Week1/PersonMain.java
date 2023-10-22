@@ -8,7 +8,7 @@ public class PersonMain {
     public static void main(String[] args) {
         Person[] person = new Person[5]; // Oder als Arraylist (falls Array länge nicht bekannt):  ArrayList<Person> = new ArrayList<>();
 
-        person[0] = new Person("Test1", 26);
+        person[0] = new Person("Test1", 26); // ArrayList: .add(new Person("Test1", 26));
         person[1] = new Person("Test2", 67);
         person[2] = new Person("Test3", 17);
         person[3] = new Person("Test4", 37);
