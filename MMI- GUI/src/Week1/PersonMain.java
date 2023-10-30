@@ -22,7 +22,7 @@ public class PersonMain {
 
     public static double averageAge(Person[] person) {
         if (person.length == 0) {
-            return 0;
+            throw new IllegalArgumentException();
         }
 
         int sum = 0;
